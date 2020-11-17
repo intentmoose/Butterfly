@@ -39,7 +39,13 @@
             <a-asset-item id="wings3"  src="./assets/model/wings3.glb"></a-asset-item>
         </a-assets>
         <a-gltf-model scale="15 15 15" rotation="0 220 0" src="#body">
-            <a-gltf-model class="wings" animation-mixer src="#wings0">
+            <a-gltf-model class="wings0" animation-mixer src="#wings0" visible="true">
+            </a-gltf-model>
+            <a-gltf-model class="wings1" animation-mixer src="#wings1" visible="false">
+            </a-gltf-model>
+            <a-gltf-model class="wings2" animation-mixer src="#wings2" visible="false">
+            </a-gltf-model>
+            <a-gltf-model class="wings3" animation-mixer src="#wings3" visible="false">
             </a-gltf-model>
         </a-gltf-model>
         <a-entity camera look-controls
@@ -47,7 +53,7 @@
         </a-entity>
         <a-sky src="./assets/img/sky.jpg"></a-sky>
         <div class="btns-wings">
-            <button class="wing wing0" onclick="changeWings('')"></button>
+            <button class="wing wing0" onclick="changeWings(0)"></button>
             <button class="wing wing1" onclick="changeWings(1)"></button>
             <button class="wing wing2" onclick="changeWings(2)"></button>
             <button class="wing wing3" onclick="changeWings(3)"></button>
