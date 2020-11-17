@@ -5,5 +5,5 @@ document.querySelector('a-assets').addEventListener('loaded', function (evt) {
 });
 function changeWings(param) {
     let wings = document.querySelector('.wings');
-    wings.setAttribute('src', `../assets/model/wings${param}.glb`)
+    wings.setAttribute('src', `assets/model/wings${param}.glb`)
 }
